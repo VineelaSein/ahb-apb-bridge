@@ -1,0 +1,3 @@
+*.vvp
+*.vcd
+synth/ahb_apb_bridge_netlist.v

@@ -1,0 +1,8 @@
+read_verilog rtl/ahb_apb_bridge.v
+hierarchy -check -top ahb_apb_bridge
+proc
+opt
+techmap
+opt
+stat
+write_verilog synth/ahb_apb_bridge_netlist.v
