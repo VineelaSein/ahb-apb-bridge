@@ -55,7 +55,7 @@ Expected: 6/6 tests pass. View the waveform with GTKWave or the WaveTrace extens
 
 Synthesized cleanly with Yosys (zero errors): 466 cells total — 67 flip-flops, 339 multiplexers, remainder combinational glue logic. No inferred latches. Full breakdown in `docs/SYNTHESIS_REPORT.md`.
 
-## Key design decisions (interview talking points)
+## Key design decisions 
 
 - **Non-pipelined bridge**: address and data phases captured together for simplicity — `HREADY` held low for the full APB transaction rather than overlapping with the next AHB address phase.
 - **Flattened `PRDATA`/`PREADY` buses**: multi-peripheral buses flattened into one wide bus, indexed with part-select (`-:`) — the standard approach real interconnect RTL uses.
